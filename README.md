@@ -4,13 +4,13 @@
 
 This project uses [ARABERT](https://huggingface.co/asafaya/bert-base-arabic), a BERT-based model pre-trained on Arabic dialects including Tunisian, to perform sentiment analysis on Tunisian Arabic text.
 
-## 🎯 Project Goals
+## Project Goals
 
 - Demonstrate Tunisian dialect sentiment analysis using transformer models
 - Provide an end-to-end pipeline from raw data to predictions
 - Showcase transfer learning with Arabic-BERT for low-resource dialects
 
-## 🤖 What is Arabic-BERT?
+## What is Arabic-BERT?
 
 Arabic-BERT is a family of BERT models specifically trained on Arabic text, including dialectal content. The base model has:
 
@@ -22,11 +22,11 @@ Arabic-BERT is a family of BERT models specifically trained on Arabic text, incl
 Available sizes:  
 `mini (41M)` | `medium (110M)` | `base (110M)` | `large (335M)`
 
-🔗 **Resources**:  
+**Resources**:  
 - [Model Card](https://huggingface.co/asafaya/bert-base-arabic)  
 - [GitHub](https://github.com/alisafaya/Arabic-BERT)  
 
-## 📊 Dataset
+## Dataset
 
 The dataset `sample.csv` contains Tunisian Arabic text with binary sentiment labels:
 
@@ -34,6 +34,8 @@ The dataset `sample.csv` contains Tunisian Arabic text with binary sentiment lab
 |--------|----------------------|
 | text   | Tunisian Arabic text |
 | label  | 0=Negative, 1=Positive |
+
+**Note**: if the csv file doesn't show the arabic words, do Data -> From Text/CSV -> UTF-8 -> Load
 
 **Example Data**:
 ```csv
