@@ -40,9 +40,12 @@ The dataset `sample.csv` contains Tunisian Arabic text with binary sentiment lab
 text,label
 "ما عجبنيش الخدمة",0
 "خدمتهم زينة والله",1
+```
 ## Quick Start
+```python
 pip install transformers torch pandas
-
+```
+```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # Load model (replace with your fine-tuned path)
@@ -53,3 +56,4 @@ model = AutoModelForSequenceClassification.from_pretrained(model_name, num_label
 # Predict example
 inputs = tokenizer("ما نصحكش بهذا المطعم", return_tensors="pt")
 outputs = model(**inputs)
+```
